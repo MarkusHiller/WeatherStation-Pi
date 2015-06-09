@@ -28,7 +28,7 @@ public class NetworkHandler {
 		//add reuqest header
 		con.setRequestMethod("POST");
  
-		String urlParameters = json;
+		String urlParameters = "data="+json;
  
 		// Send post request
 		con.setDoOutput(true);
@@ -53,7 +53,7 @@ public class NetworkHandler {
 		in.close();
  
 		//print result
-		System.out.println(response.toString());
+		System.out.println("\nPostArray from Server: " + response.toString());
 	}
 	
 }
