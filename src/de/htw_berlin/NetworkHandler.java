@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -12,7 +13,7 @@ import com.google.gson.Gson;
 
 public class NetworkHandler {
 
-	private String url = "test.silverwars.de";
+	private String url = "http://test.silverwars.de/testSensor";
 	private Gson gson;
 	
 	public NetworkHandler() {
@@ -22,7 +23,7 @@ public class NetworkHandler {
 	public void send(Object obj) throws IOException {
 		String json = gson.toJson(obj);
 		URL urlObj = new URL(url);
-		HttpsURLConnection con = (HttpsURLConnection) urlObj.openConnection();
+		HttpURLConnection con = (HttpURLConnection) urlObj.openConnection();
  
 		//add reuqest header
 		con.setRequestMethod("POST");
