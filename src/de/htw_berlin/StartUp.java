@@ -10,7 +10,7 @@ public class StartUp {
 		while(true) {
 			System.out.println("Start: " + new Date());
 			startTimeMilli = System.currentTimeMillis();
-			Thread.sleep(1000);
+			
 			
 			endTimeMilli = System.currentTimeMillis();
 			Thread.sleep((60000 - (endTimeMilli - startTimeMilli)));
