@@ -3,12 +3,12 @@ package de.htw_berlin;
 import java.util.Date;
 
 public abstract class SensorModel {
-	
-	protected int stationId = (int)(Math.random()*(100 - 1));
-	protected double stationLong = 52.455437;
-	protected double stationLat = 13.526179;
-	protected int sensorId;
-	protected String sensorType;
+
+	protected String stationid = "Test";
+	protected double stationlong = 52.455437;
+	protected double stationlat = 13.526179;
+	protected int sensorid;
+	protected String sensortype;
 	protected double value;
 	protected String unit;
 	protected Date timestamp;
