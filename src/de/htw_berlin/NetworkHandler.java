@@ -25,7 +25,7 @@ public class NetworkHandler {
 		URL urlObj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) urlObj.openConnection();
  
-		//add reuqest header
+		//add request header
 		con.setRequestMethod("POST");
  
 		String urlParameters = json;

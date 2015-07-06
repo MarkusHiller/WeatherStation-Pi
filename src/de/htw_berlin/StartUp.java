@@ -9,11 +9,13 @@ public class StartUp {
 		long startTimeMilli, endTimeMilli;
 		NetworkHandler nh = new NetworkHandler();
 		TemperatureModel tm = new TemperatureModel();
+		StationModel sm = new StationModel();
 		
 		while(true) {
 			System.out.println("Start: " + new Date());
 			startTimeMilli = System.currentTimeMillis();
 			tm.getData();
+			sm.getData();
 			nh.send(tm);
 			
 			endTimeMilli = System.currentTimeMillis();
