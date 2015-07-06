@@ -27,8 +27,9 @@ public class NetworkHandler {
  
 		//add request header
 		con.setRequestMethod("POST");
+		con.setRequestProperty("Content-Type", "application/json");
  
-		String urlParameters = "data="+json;
+		String urlParameters = json;
  
 		// Send post request
 		con.setDoOutput(true);
