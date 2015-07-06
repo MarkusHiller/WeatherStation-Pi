@@ -12,8 +12,8 @@ public class TemperatureModel extends SensorModel{
 	}
 	
 	public void getData() {
-		this.sensorId = (int)(Math.random()*(100 - 1));
-		this.sensorType = "Temperature";
+		this.sensorid = (int)(Math.random()*(100 - 1));
+		this.sensortype = "Temperature";
 		this.value = Math.random()*(99 - 0);
 		this.unit = "Einheit";
 		this.timestamp = new Date();
