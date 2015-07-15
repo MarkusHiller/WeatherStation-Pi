@@ -7,7 +7,7 @@ public abstract class SensorModel {
 	protected String stationid = "Test";
 	protected double stationlong = 52.455437;
 	protected double stationlat = 13.526179;
-	protected int sensorid;
+	protected String sensorid;
 	protected String sensortype;
 	protected double value;
 	protected String unit;
