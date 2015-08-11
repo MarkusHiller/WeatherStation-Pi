@@ -14,7 +14,7 @@ public class TemperatureModel extends SensorModel{
 		this.sensorid = id;
 	}
 	
-	public void getData() {
+	public void readData() {
 		Process pr;
 		List<String> lines = new ArrayList<String>();
 		try {
@@ -29,7 +29,6 @@ public class TemperatureModel extends SensorModel{
 				    lines.add(line);
 				}
 				pr.waitFor();
-				System.out.println("ok!");
 
 				in.close();
 		} catch (Exception e){

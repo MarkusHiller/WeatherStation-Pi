@@ -17,6 +17,6 @@ public abstract class SensorModel {
 		
 	}
 	
-	public abstract void getData();
+	public abstract void readData();
 	
 }
