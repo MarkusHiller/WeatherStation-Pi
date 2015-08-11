@@ -38,7 +38,7 @@ public class TemperatureModel extends SensorModel{
 		if(lines.get(0).contains("YES")) {
 			this.sensortype = "Temperature";
 			this.value = Double.parseDouble(lines.get(1).substring(lines.get(1).indexOf("t=") + 2, lines.get(1).length())) * 0.001;
-			this.unit = "Einheit";
+			this.unit = "Celsius";
 			this.timestamp = new Date();
 		}
 		
